@@ -1,0 +1,11 @@
+﻿<Window x:Class="VideoStreamer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="533.443">
+    <Grid>
+        <Image Name="image" HorizontalAlignment="Left" Height="242" Margin="10,10,0,0" VerticalAlignment="Top" Width="467"/>
+        <Button Content="Start" Click="Start_Click" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Width="75"/>
+        <Slider Name="ZoomSlider" Thumb.DragCompleted="ZoomSlider_DragCompleted" HorizontalAlignment="Left" Margin="482,10,0,0" VerticalAlignment="Top" Width="27" Maximum="30" Orientation="Vertical" Height="242"/>
+        <Label Name="ZoomLabel" Content="Zoom: 0" HorizontalAlignment="Left" Margin="468,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.354,0.649"/>
+    </Grid>
+</Window>
